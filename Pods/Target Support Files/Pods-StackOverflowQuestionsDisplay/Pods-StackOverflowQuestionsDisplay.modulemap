@@ -1,0 +1,6 @@
+framework module Pods_StackOverflowQuestionsDisplay {
+  umbrella header "Pods-StackOverflowQuestionsDisplay-umbrella.h"
+
+  export *
+  module * { export * }
+}

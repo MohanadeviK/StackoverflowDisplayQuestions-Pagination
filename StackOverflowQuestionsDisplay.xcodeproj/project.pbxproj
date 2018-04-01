@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0400F55B1231BB9DA9DB0B35 /* Pods_StackOverflowQuestionsDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4D00F155E8007AAB7727E8 /* Pods_StackOverflowQuestionsDisplay.framework */; };
+		C2A6A0FE2070C87500C45E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A0FD2070C87500C45E6A /* AppDelegate.swift */; };
+		C2A6A1002070C87500C45E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A0FF2070C87500C45E6A /* ViewController.swift */; };
+		C2A6A1032070C87500C45E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A6A1012070C87500C45E6A /* Main.storyboard */; };
+		C2A6A1052070C87500C45E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A6A1042070C87500C45E6A /* Assets.xcassets */; };
+		C2A6A1082070C87500C45E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A6A1062070C87500C45E6A /* LaunchScreen.storyboard */; };
+		C2A6A1132070C87500C45E6A /* StackOverflowQuestionsDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A1122070C87500C45E6A /* StackOverflowQuestionsDisplayTests.swift */; };
+		C2A6A11E2070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A11D2070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.swift */; };
+		C2A6A12E2070D9A100C45E6A /* QuestionsDisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A12C2070D9A100C45E6A /* QuestionsDisplayTableViewCell.swift */; };
+		C2A6A12F2070D9A100C45E6A /* QuestionsDisplayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2A6A12D2070D9A100C45E6A /* QuestionsDisplayTableViewCell.xib */; };
+		C2A6A1322070E77B00C45E6A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A1312070E77B00C45E6A /* Services.swift */; };
+		C2A6A1342070E8DD00C45E6A /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A1332070E8DD00C45E6A /* WebServices.swift */; };
+		C2A6A1382070EB4700C45E6A /* GetQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A1372070EB4700C45E6A /* GetQuestions.swift */; };
+		C2A6A13A2070EBAC00C45E6A /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A1392070EBAC00C45E6A /* Items.swift */; };
+		C2A6A13E2070F95100C45E6A /* OwnerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6A13D2070F95100C45E6A /* OwnerDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2A6A10F2070C87500C45E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2A6A0F22070C87500C45E6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2A6A0F92070C87500C45E6A;
+			remoteInfo = StackOverflowQuestionsDisplay;
+		};
+		C2A6A11A2070C87500C45E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2A6A0F22070C87500C45E6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2A6A0F92070C87500C45E6A;
+			remoteInfo = StackOverflowQuestionsDisplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F9205700C12B23BCB534C8 /* Pods-StackOverflowQuestionsDisplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowQuestionsDisplay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowQuestionsDisplay/Pods-StackOverflowQuestionsDisplay.debug.xcconfig"; sourceTree = "<group>"; };
+		7BB2400E951FD6CCA74358EA /* Pods-StackOverflowQuestionsDisplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowQuestionsDisplay.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowQuestionsDisplay/Pods-StackOverflowQuestionsDisplay.release.xcconfig"; sourceTree = "<group>"; };
+		C2A6A0FA2070C87500C45E6A /* StackOverflowQuestionsDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowQuestionsDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A6A0FD2070C87500C45E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2A6A0FF2070C87500C45E6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2A6A1022070C87500C45E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2A6A1042070C87500C45E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2A6A1072070C87500C45E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2A6A1092070C87500C45E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A6A10E2070C87500C45E6A /* StackOverflowQuestionsDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowQuestionsDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A6A1122070C87500C45E6A /* StackOverflowQuestionsDisplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowQuestionsDisplayTests.swift; sourceTree = "<group>"; };
+		C2A6A1142070C87500C45E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A6A1192070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowQuestionsDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A6A11D2070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowQuestionsDisplayUITests.swift; sourceTree = "<group>"; };
+		C2A6A11F2070C87500C45E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A6A12C2070D9A100C45E6A /* QuestionsDisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsDisplayTableViewCell.swift; sourceTree = "<group>"; };
+		C2A6A12D2070D9A100C45E6A /* QuestionsDisplayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsDisplayTableViewCell.xib; sourceTree = "<group>"; };
+		C2A6A1312070E77B00C45E6A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		C2A6A1332070E8DD00C45E6A /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		C2A6A1372070EB4700C45E6A /* GetQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuestions.swift; sourceTree = "<group>"; };
+		C2A6A1392070EBAC00C45E6A /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		C2A6A13D2070F95100C45E6A /* OwnerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerDetails.swift; sourceTree = "<group>"; };
+		DA4D00F155E8007AAB7727E8 /* Pods_StackOverflowQuestionsDisplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowQuestionsDisplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2A6A0F72070C87500C45E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0400F55B1231BB9DA9DB0B35 /* Pods_StackOverflowQuestionsDisplay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A6A10B2070C87500C45E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A6A1162070C87500C45E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2A6A0F12070C87500C45E6A = {
+			isa = PBXGroup;
+			children = (
+				C2A6A0FC2070C87500C45E6A /* StackOverflowQuestionsDisplay */,
+				C2A6A1112070C87500C45E6A /* StackOverflowQuestionsDisplayTests */,
+				C2A6A11C2070C87500C45E6A /* StackOverflowQuestionsDisplayUITests */,
+				C2A6A0FB2070C87500C45E6A /* Products */,
+				F699DAABF595C411601DAD1B /* Pods */,
+				C8CB53316B7D4C8C7EBA473F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C2A6A0FB2070C87500C45E6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A0FA2070C87500C45E6A /* StackOverflowQuestionsDisplay.app */,
+				C2A6A10E2070C87500C45E6A /* StackOverflowQuestionsDisplayTests.xctest */,
+				C2A6A1192070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2A6A0FC2070C87500C45E6A /* StackOverflowQuestionsDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A1352070EAFC00C45E6A /* Models */,
+				C2A6A1302070E73C00C45E6A /* WebServices */,
+				C2A6A12B2070D97A00C45E6A /* xibviews */,
+				C2A6A0FD2070C87500C45E6A /* AppDelegate.swift */,
+				C2A6A0FF2070C87500C45E6A /* ViewController.swift */,
+				C2A6A1012070C87500C45E6A /* Main.storyboard */,
+				C2A6A1042070C87500C45E6A /* Assets.xcassets */,
+				C2A6A1062070C87500C45E6A /* LaunchScreen.storyboard */,
+				C2A6A1092070C87500C45E6A /* Info.plist */,
+			);
+			path = StackOverflowQuestionsDisplay;
+			sourceTree = "<group>";
+		};
+		C2A6A1112070C87500C45E6A /* StackOverflowQuestionsDisplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A1122070C87500C45E6A /* StackOverflowQuestionsDisplayTests.swift */,
+				C2A6A1142070C87500C45E6A /* Info.plist */,
+			);
+			path = StackOverflowQuestionsDisplayTests;
+			sourceTree = "<group>";
+		};
+		C2A6A11C2070C87500C45E6A /* StackOverflowQuestionsDisplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A11D2070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.swift */,
+				C2A6A11F2070C87500C45E6A /* Info.plist */,
+			);
+			path = StackOverflowQuestionsDisplayUITests;
+			sourceTree = "<group>";
+		};
+		C2A6A12B2070D97A00C45E6A /* xibviews */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A12C2070D9A100C45E6A /* QuestionsDisplayTableViewCell.swift */,
+				C2A6A12D2070D9A100C45E6A /* QuestionsDisplayTableViewCell.xib */,
+			);
+			path = xibviews;
+			sourceTree = "<group>";
+		};
+		C2A6A1302070E73C00C45E6A /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A1312070E77B00C45E6A /* Services.swift */,
+				C2A6A1332070E8DD00C45E6A /* WebServices.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		C2A6A1352070EAFC00C45E6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A1362070EB0200C45E6A /* GetQuestions */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2A6A1362070EB0200C45E6A /* GetQuestions */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6A1372070EB4700C45E6A /* GetQuestions.swift */,
+				C2A6A1392070EBAC00C45E6A /* Items.swift */,
+				C2A6A13D2070F95100C45E6A /* OwnerDetails.swift */,
+			);
+			path = GetQuestions;
+			sourceTree = "<group>";
+		};
+		C8CB53316B7D4C8C7EBA473F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D00F155E8007AAB7727E8 /* Pods_StackOverflowQuestionsDisplay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F699DAABF595C411601DAD1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09F9205700C12B23BCB534C8 /* Pods-StackOverflowQuestionsDisplay.debug.xcconfig */,
+				7BB2400E951FD6CCA74358EA /* Pods-StackOverflowQuestionsDisplay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2A6A0F92070C87500C45E6A /* StackOverflowQuestionsDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2A6A1222070C87500C45E6A /* Build configuration list for PBXNativeTarget "StackOverflowQuestionsDisplay" */;
+			buildPhases = (
+				3E467FCE158DD8DA4055B187 /* [CP] Check Pods Manifest.lock */,
+				C2A6A0F62070C87500C45E6A /* Sources */,
+				C2A6A0F72070C87500C45E6A /* Frameworks */,
+				C2A6A0F82070C87500C45E6A /* Resources */,
+				A2AF7DB7DFBC7D1274CC2D71 /* [CP] Embed Pods Frameworks */,
+				00A5E53240F897118C1582FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackOverflowQuestionsDisplay;
+			productName = StackOverflowQuestionsDisplay;
+			productReference = C2A6A0FA2070C87500C45E6A /* StackOverflowQuestionsDisplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2A6A10D2070C87500C45E6A /* StackOverflowQuestionsDisplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2A6A1252070C87500C45E6A /* Build configuration list for PBXNativeTarget "StackOverflowQuestionsDisplayTests" */;
+			buildPhases = (
+				C2A6A10A2070C87500C45E6A /* Sources */,
+				C2A6A10B2070C87500C45E6A /* Frameworks */,
+				C2A6A10C2070C87500C45E6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2A6A1102070C87500C45E6A /* PBXTargetDependency */,
+			);
+			name = StackOverflowQuestionsDisplayTests;
+			productName = StackOverflowQuestionsDisplayTests;
+			productReference = C2A6A10E2070C87500C45E6A /* StackOverflowQuestionsDisplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2A6A1182070C87500C45E6A /* StackOverflowQuestionsDisplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2A6A1282070C87500C45E6A /* Build configuration list for PBXNativeTarget "StackOverflowQuestionsDisplayUITests" */;
+			buildPhases = (
+				C2A6A1152070C87500C45E6A /* Sources */,
+				C2A6A1162070C87500C45E6A /* Frameworks */,
+				C2A6A1172070C87500C45E6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2A6A11B2070C87500C45E6A /* PBXTargetDependency */,
+			);
+			name = StackOverflowQuestionsDisplayUITests;
+			productName = StackOverflowQuestionsDisplayUITests;
+			productReference = C2A6A1192070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2A6A0F22070C87500C45E6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Madhu;
+				TargetAttributes = {
+					C2A6A0F92070C87500C45E6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C2A6A10D2070C87500C45E6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2A6A0F92070C87500C45E6A;
+					};
+					C2A6A1182070C87500C45E6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2A6A0F92070C87500C45E6A;
+					};
+				};
+			};
+			buildConfigurationList = C2A6A0F52070C87500C45E6A /* Build configuration list for PBXProject "StackOverflowQuestionsDisplay" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2A6A0F12070C87500C45E6A;
+			productRefGroup = C2A6A0FB2070C87500C45E6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2A6A0F92070C87500C45E6A /* StackOverflowQuestionsDisplay */,
+				C2A6A10D2070C87500C45E6A /* StackOverflowQuestionsDisplayTests */,
+				C2A6A1182070C87500C45E6A /* StackOverflowQuestionsDisplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2A6A0F82070C87500C45E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A6A1082070C87500C45E6A /* LaunchScreen.storyboard in Resources */,
+				C2A6A1052070C87500C45E6A /* Assets.xcassets in Resources */,
+				C2A6A12F2070D9A100C45E6A /* QuestionsDisplayTableViewCell.xib in Resources */,
+				C2A6A1032070C87500C45E6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A6A10C2070C87500C45E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A6A1172070C87500C45E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A5E53240F897118C1582FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowQuestionsDisplay/Pods-StackOverflowQuestionsDisplay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E467FCE158DD8DA4055B187 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StackOverflowQuestionsDisplay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2AF7DB7DFBC7D1274CC2D71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowQuestionsDisplay/Pods-StackOverflowQuestionsDisplay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowQuestionsDisplay/Pods-StackOverflowQuestionsDisplay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2A6A0F62070C87500C45E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A6A1382070EB4700C45E6A /* GetQuestions.swift in Sources */,
+				C2A6A12E2070D9A100C45E6A /* QuestionsDisplayTableViewCell.swift in Sources */,
+				C2A6A1342070E8DD00C45E6A /* WebServices.swift in Sources */,
+				C2A6A1322070E77B00C45E6A /* Services.swift in Sources */,
+				C2A6A13A2070EBAC00C45E6A /* Items.swift in Sources */,
+				C2A6A1002070C87500C45E6A /* ViewController.swift in Sources */,
+				C2A6A13E2070F95100C45E6A /* OwnerDetails.swift in Sources */,
+				C2A6A0FE2070C87500C45E6A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A6A10A2070C87500C45E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A6A1132070C87500C45E6A /* StackOverflowQuestionsDisplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A6A1152070C87500C45E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A6A11E2070C87500C45E6A /* StackOverflowQuestionsDisplayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2A6A1102070C87500C45E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2A6A0F92070C87500C45E6A /* StackOverflowQuestionsDisplay */;
+			targetProxy = C2A6A10F2070C87500C45E6A /* PBXContainerItemProxy */;
+		};
+		C2A6A11B2070C87500C45E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2A6A0F92070C87500C45E6A /* StackOverflowQuestionsDisplay */;
+			targetProxy = C2A6A11A2070C87500C45E6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2A6A1012070C87500C45E6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2A6A1022070C87500C45E6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2A6A1062070C87500C45E6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2A6A1072070C87500C45E6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2A6A1202070C87500C45E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2A6A1212070C87500C45E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2A6A1232070C87500C45E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F9205700C12B23BCB534C8 /* Pods-StackOverflowQuestionsDisplay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8K97SBPY3;
+				INFOPLIST_FILE = StackOverflowQuestionsDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StackOverflowQuestionsDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2A6A1242070C87500C45E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB2400E951FD6CCA74358EA /* Pods-StackOverflowQuestionsDisplay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8K97SBPY3;
+				INFOPLIST_FILE = StackOverflowQuestionsDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StackOverflowQuestionsDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2A6A1262070C87500C45E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackOverflowQuestionsDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StackOverflowQuestionsDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowQuestionsDisplay.app/StackOverflowQuestionsDisplay";
+			};
+			name = Debug;
+		};
+		C2A6A1272070C87500C45E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackOverflowQuestionsDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StackOverflowQuestionsDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowQuestionsDisplay.app/StackOverflowQuestionsDisplay";
+			};
+			name = Release;
+		};
+		C2A6A1292070C87500C45E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackOverflowQuestionsDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StackOverflowQuestionsDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StackOverflowQuestionsDisplay;
+			};
+			name = Debug;
+		};
+		C2A6A12A2070C87500C45E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackOverflowQuestionsDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StackOverflowQuestionsDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StackOverflowQuestionsDisplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2A6A0F52070C87500C45E6A /* Build configuration list for PBXProject "StackOverflowQuestionsDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2A6A1202070C87500C45E6A /* Debug */,
+				C2A6A1212070C87500C45E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2A6A1222070C87500C45E6A /* Build configuration list for PBXNativeTarget "StackOverflowQuestionsDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2A6A1232070C87500C45E6A /* Debug */,
+				C2A6A1242070C87500C45E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2A6A1252070C87500C45E6A /* Build configuration list for PBXNativeTarget "StackOverflowQuestionsDisplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2A6A1262070C87500C45E6A /* Debug */,
+				C2A6A1272070C87500C45E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2A6A1282070C87500C45E6A /* Build configuration list for PBXNativeTarget "StackOverflowQuestionsDisplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2A6A1292070C87500C45E6A /* Debug */,
+				C2A6A12A2070C87500C45E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2A6A0F22070C87500C45E6A /* Project object */;
+}
