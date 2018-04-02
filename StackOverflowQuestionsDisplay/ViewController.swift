@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     var questionsItemResponse : Array<Items> = []
     var pageNo = 1
     let pageSize = 12
-    var flag = false
     
     //MARK: ViewLifeCycle
     
@@ -61,11 +60,12 @@ class ViewController: UIViewController {
                 self.questionsTblView.beginUpdates()
                 self.questionsTblView.insertRows(at: indexPathArray, with: .fade)
                 self.questionsTblView.endUpdates()
+                
+                self.questionsTblView.tableFooterView = UIView()
             }
             if self.questionsItemResponse.count > 0 {
                 DispatchQueue.main.async{
                     self.activityIndicator.stopAnimating()
-                    self.flag = true
                 }
             }
         }
@@ -82,31 +82,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.clear
         cell.questionsDisplayLbl.text = self.questionsItemResponse[indexPath.row].topic
-        if indexPath.row ==  self.questionsItemResponse.count - 1 {
-            self.flag = false
-            self.pageNo = pageNo + 1
-            questionsLoadingApiServiceCall(pageNo: self.pageNo, size: self.pageSize)
-        }
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        if self.questionsItemResponse.count > 0 {
-            let customView = UIView(frame: CGRect(x: 0, y: UIScreen.main.bounds.height - 44, width: UIScreen.main.bounds.width, height: 64))
-            customView.backgroundColor = UIColor.clear
-            let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: (UIScreen.main.bounds.width) / 2, y: 12, width: 20, height: 20))
-            activityIndicator.color = UIColor.yellow
-            customView.addSubview(activityIndicator)
-            if self.flag == false {
-                activityIndicator.startAnimating()
-            }
-            else {
-                activityIndicator.stopAnimating()
-            }
-            return customView
-        }
-        else {
-            return UIView()
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+        if indexPath.row ==  self.questionsItemResponse.count - 1 {
+            let spinner = UIActivityIndicatorView(activityIndicatorStyle: .white)
+            spinner.startAnimating()
+            spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: UIScreen.main.bounds.width, height: CGFloat(44))
+            self.questionsTblView.tableFooterView = spinner
+            self.pageNo = pageNo + 1
+            questionsLoadingApiServiceCall(pageNo: self.pageNo, size: self.pageSize)
         }
     }
 }
